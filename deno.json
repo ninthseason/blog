@@ -1,0 +1,21 @@
+{
+  "nodeModulesDir": "auto",
+  "imports": {
+    "vitepress": "npm:vitepress@^1.6.4",
+    "vue": "npm:vue@^3.5.0"
+  },
+  "tasks": {
+    "dev": "deno run -A npm:vitepress@1.6.4 dev docs",
+    "build": "deno run -A npm:vitepress@1.6.4 build docs",
+    "preview": "deno run -A npm:vitepress@1.6.4 preview docs"
+  },
+  "deploy": {
+    "install": "deno install",
+    "build": "deno task build",
+    "runtime": {
+      "type": "static",
+      "cwd": "./docs/.vitepress/dist",
+      "spa": false
+    }
+  }
+}
