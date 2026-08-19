@@ -1,6 +1,8 @@
 {
   "nodeModulesDir": "auto",
   "imports": {
+    "@mdit/plugin-katex": "npm:@mdit/plugin-katex@^1.1.0",
+    "katex": "npm:katex@^0.18.4",
     "vitepress": "npm:vitepress@^1.6.4",
     "vue": "npm:vue@^3.5.0"
   },
